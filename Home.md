@@ -12,11 +12,11 @@ El objetivo principal de este tutorial es proporcionar a los estudiantes los con
 
 Este tutorial está dividido en varias secciones. Se recomienda seguir las secciones en el orden en que están presentadas, ya que cada una se basa en los conocimientos o elementos adquiridos en las anteriores. Al terminar cada sección se da un enlace a la siguiente sección.
 
-1. [Instalación de las herramientas](https://github.com/DJosueMM/open_source_fpga_environment/wiki/1.-Instalaci%C3%B3n-de-las-herramientas)
+1. [Instalación de las herramientas](https://github.com/FZumb4do/open_source_fpga_environment/blob/main/1.%20Instalaci%C3%B3n%20de%20las%20herramientas.md)
 
-2. [Uso del toolchain para diseño en FPGA](https://github.com/DJosueMM/open_source_fpga_environment/wiki/2.-Uso-del-toolchain-para-dise%C3%B1o-en-FPGA)
+2. [Uso del toolchain para diseño en FPGA](https://github.com/FZumb4do/open_source_fpga_environment/blob/main/2.%20Uso%20del%20toolchain%20para%20dise%C3%B1o%20en%20FPGA.md)
 
-3. [Primer diseño, desde el RTL hasta el bitstream](https://github.com/DJosueMM/open_source_fpga_environment/wiki/3.-Primer-dise%C3%B1o,-desde-el-RTL-hasta-el-bitstream)
+3. [Primer diseño, desde el RTL hasta el bitstream](https://github.com/FZumb4do/open_source_fpga_environment/blob/main/3.-Primer-dise%C3%B1o%2C-desde-el-RTL-hasta-el-bitstream.md)
 
 ## Requisitos
 
@@ -48,8 +48,8 @@ Si tienen alguna duda o necesitan asistencia, no duden en contactar al asistente
 
 ¡Buena suerte y esperamos que disfruten aprendiendo sobre el diseño en FPGAs con herramientas de código abierto!
 
-1. [Instalación de las herramientas](https://github.com/DJosueMM/open_source_fpga_environment/wiki/1.-Instalaci%C3%B3n-de-las-herramientas)
+1. [Instalación de las herramientas](https://github.com/FZumb4do/open_source_fpga_environment/blob/main/1.%20Instalaci%C3%B3n%20de%20las%20herramientas.md)
 
 ## Ultima actualización:
-- David Medina
-- 29-07-2024.
+- Felipe Zumbado
+- 07-08-2025.

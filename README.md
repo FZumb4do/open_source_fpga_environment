@@ -2,4 +2,4 @@
 
 ## Tutorial del curso de Diseño Lógico: 
 
-[Tutorial](https://github.com/DJosueMM/open_source_fpga_environment/wiki)
+[Tutorial](https://github.com/FZumb4do/open_source_fpga_environment/blob/main/Home.md)
