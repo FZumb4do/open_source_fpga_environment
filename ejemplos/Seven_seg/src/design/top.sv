@@ -15,36 +15,36 @@ assign D = sw[0];
     /*Esta seccion de codigo presenta la logica booleana necesaria para las salidas del sistema, 
     las cuales se deben conectar a un respectivo segmento del display.*/
 
-assign segments[0] = (~A & ~C) |         // segmento A
-                    (~A & B & D) |
-                    (A & ~B & ~C) |
-                    (~A & ~B & ~D);      
-
-assign segments[1] = (~A & ~B) |         // segmento B
-                    (~B & ~C) |
-                    (~A & C & D) |
-                    (~A & ~C & ~D);      
-
-assign segments[2] = (~A & B) |          // segmento C
-                    (~A & D) |
-                    (~B & ~C);      
-
-assign segments[3] = (~A & ~B & C) |     // segmento D
-                    (~A & C & ~D) |
-                    (~B & ~C & D) |
-                    (~A & B & ~C & D);
-      
-assign segments[4] = (~A & C & ~D) |     // segmento E
-                    (~B & ~C & ~D);      
-
-assign segments[5] = (A & ~B & ~C) |     // segmento F
-                    (~A & B & ~C) |
-                    (~A & ~B & ~D) |
-                    (~A & C & ~D);      
-                    
-assign segments[6] = (A) |               // segmento G
+assign segments[0] = (A) |               // segmento A
                     (B & ~C) |
                     (~B & C) |
                     (C & ~D);  
+
+assign segments[1] = (A & ~B & ~C) |     // segmento B
+                    (~A & B & ~C) |
+                    (~A & B & ~D) |
+                    (~A & ~C & ~D); 
+
+assign segments[2] = (~A & C & ~D) |     // segmento C
+                    (~B & ~C & ~D);        
+
+assign segments[3] = (~A & ~B & C) |     // segmento D
+                    (~A & C & ~D) |
+                    (~B & ~C & ~D) |
+                    (~A & B & ~C & D);
+
+assign segments[4] = (~A & B) |          // segmento F
+                    (~A & D) |
+                    (~B & ~C);
+
+assign segments[5] = (~A & ~B) |         // segmento E
+                    (~B & ~C) |
+                    (~A & C & D) |
+                    (~A & ~C & ~D); 
+
+assign segments[6] = (~A & C) |         // segmento G
+                    (~A & B & D) |
+                    (A & ~B & ~C) |
+                    (~A & ~B & ~D);                            
     
 endmodule

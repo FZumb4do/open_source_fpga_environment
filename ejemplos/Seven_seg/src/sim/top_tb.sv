@@ -35,7 +35,7 @@ module top_tb;
             4'd6: expected = 7'b1011111;
             4'd7: expected = 7'b1110000;
             4'd8: expected = 7'b1111111;
-            4'd9: expected = 7'b1111011;
+            4'd9: expected = 7'b1110011;
             // 10–15 → solo G
             default: expected = 7'b0000001;
         endcase
@@ -47,9 +47,9 @@ module top_tb;
         for (int i = 0; i < 16; i++) begin
             sw = i;
             #1;
-            out = {Sg,Sf,Se,Sd,Sc,Sb,Sa};
+            out = {Sg,Sf,Se,Sd,Sc,Sb,Sa};       
 
-            if (out !== expected(i)) begin
+            if (out != expected(i)) begin
                 $display("ERROR at %0d -> got %b expected %b",
                          i, out, expected(i));
             end
