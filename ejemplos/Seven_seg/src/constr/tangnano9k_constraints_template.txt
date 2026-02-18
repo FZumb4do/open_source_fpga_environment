@@ -1,0 +1,209 @@
+// To use it in a project:
+//   - rename the used ports (in each line between quotation marks, "port") according to the top level signal names in the project
+//   - change .txt to .cst. This textfile is just a guide.
+////FPGA: GW1NR-LV9QN88PC6/I5
+
+
+//Clock
+IO_LOC  "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+//Switches
+IO_LOC  "btn1" 3;
+IO_PORT "btn1" IO_TYPE=LVCMOS18;
+
+IO_LOC  "btn2" 4;
+IO_PORT "btn2" IO_TYPE=LVCMOS18;
+
+
+//LEDs
+IO_LOC  "led[0]" 10;
+IO_PORT "led[0]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[1]" 11;
+IO_PORT "led[1]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[2]" 13;
+IO_PORT "led[2]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[3]" 14;
+IO_PORT "led[3]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[4]" 15;
+IO_PORT "led[4]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led[5]" 16;
+IO_PORT "led[5]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+
+//Header_physical_ports
+//DRIVE: current in mA (4, 8, 16 or 24), //PULL_MODE: ensure a known state for a signal (GND or VCC), //IO_TYPE: LVCMOS33/LVCMOS18 voltage (3.3 or 1.8)
+//Any header on the board can be used, in this section there are only those that are not used by the boards interfaces, for example, HDMI. To use any port you just have to follow the format.
+IO_LOC "port25" 25;
+IO_LOC "port25" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC "port26" 26;
+IO_LOC "port26" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC "port27" 27;
+IO_LOC "port27" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC "port28" 28;
+IO_LOC "port28" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC "port29" 29;
+IO_LOC "port29" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC "port30" 30;
+IO_LOC "port30" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC "port79" 79;
+IO_LOC "port79" DRIVE=8 IO_TYPE=LVCMOS18 PULL_MODE=DOWN;
+
+IO_LOC "port80" 80;
+IO_LOC "port80" DRIVE=8 IO_TYPE=LVCMOS18 PULL_MODE=DOWN;
+
+IO_LOC "port81" 81;
+IO_LOC "port81" DRIVE=8 IO_TYPE=LVCMOS18 PULL_MODE=DOWN;
+
+IO_LOC "port82" 82;
+IO_LOC "port82" DRIVE=8 IO_TYPE=LVCMOS18 PULL_MODE=DOWN;
+
+IO_LOC "port83" 83;
+IO_LOC "port83" DRIVE=8 IO_TYPE=LVCMOS18 PULL_MODE=DOWN;
+
+IO_LOC "port84" 84;
+IO_LOC "port84" DRIVE=8 IO_TYPE=LVCMOS18 PULL_MODE=DOWN;
+
+IO_LOC "port85" 85;
+IO_LOC "port85" DRIVE=8 IO_TYPE=LVCMOS18 PULL_MODE=DOWN;
+
+
+//SD_Card
+IO_LOC  "sdClk" 36;
+IO_PORT "sdClk" IO_TYPE=LVCMOS33;
+
+IO_LOC  "sdMiso" 39;
+IO_PORT "sdMiso" IO_TYPE=LVCMOS33;
+
+IO_LOC  "sdMosi" 37;
+IO_PORT "sdMosi" IO_TYPE=LVCMOS33;
+
+IO_LOC  "sdCs" 38;
+IO_PORT "sdCs" IO_TYPE=LVCMOS33;
+
+
+//Flash
+IO_LOC  "flashClk" 59;
+IO_PORT "flashClk" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC  "flashMiso" 62;
+IO_PORT "flashMiso" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC  "flashMosi" 61;
+IO_PORT "flashMosi" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC  "flashCs" 60;
+IO_PORT "flashCs" DRIVE=8 IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+//UART
+IO_LOC  "uartTx" 17;
+IO_PORT "uartTx" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC  "uartRx" 18;
+IO_PORT "uartRx" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+
+//HDMI_interface
+IO_LOC  "hdmiTmdsData[0]" 71,70;
+IO_PORT "hdmiTmdsData[0]" DRIVE=8;
+
+IO_LOC  "hdmiTmdsData[1]" 73,72;
+IO_PORT "hdmiTmdsData[1]" DRIVE=8;
+
+IO_LOC  "hdmiTmdsData[2]" 75,74;
+IO_PORT "hdmiTmdsData[2]" DRIVE=8;
+
+IO_LOC  "hdmiTmdsClk" 69,68;
+IO_PORT "hdmiTmdsClk" DRIVE=8;
+
+
+//SPI_LCD_interface
+IO_LOC "spi_lcd_data" 77;
+IO_PORT "spi_lcd_data" PULL_MODE=UP DRIVE=8;
+
+IO_LOC "spi_lcd_rst" 49;
+IO_PORT "spi_lcd_rst" PULL_MODE=UP DRIVE=8;
+
+IO_LOC "spi_lcd_cs" 48;
+IO_PORT "spi_lcd_cs" PULL_MODE=UP DRIVE=8;
+
+IO_LOC "spi_lcd_clk" 76;
+IO_PORT "spi_lcd_clk" PULL_MODE=UP DRIVE=8;
+
+IO_LOC "spi_lcd_resetn" 47;
+IO_PORT "spi_lcd_resetn" PULL_MODE=UP DRIVE=8;
+
+
+//RGB_LCD_interface
+IO_LOC "LCD_B[4]" 41;
+IO_PORT "LCD_B[4]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_B[3]" 42;
+IO_PORT "LCD_B[3]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_B[2]" 51;
+IO_PORT "LCD_B[2]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_B[1]" 53;
+IO_PORT "LCD_B[1]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_B[0]" 54;
+IO_PORT "LCD_B[0]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_G[5]" 55;
+IO_PORT "LCD_G[5]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_G[4]" 56;
+IO_PORT "LCD_G[4]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_G[3]" 57;
+IO_PORT "LCD_G[3]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_G[2]" 68;
+IO_PORT "LCD_G[2]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_G[1]" 69;
+IO_PORT "LCD_G[1]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_G[0]" 70;
+IO_PORT "LCD_G[0]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_R[4]" 71;
+IO_PORT "LCD_R[4]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_R[3]" 72;
+IO_PORT "LCD_R[3]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_R[2]" 73;
+IO_PORT "LCD_R[2]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_R[1]" 74;
+IO_PORT "LCD_R[1]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_R[0]" 75;
+IO_PORT "LCD_R[0]" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_DE" 33;
+IO_PORT "LCD_DE" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_VSYNC" 34;
+IO_PORT "LCD_VSYNC" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_HSYNC" 40;
+IO_PORT "LCD_HSYNC" IO_TYPE=LVCMOS33;
+
+IO_LOC "LCD_CLK" 35;
+IO_PORT "LCD_CLK" IO_TYPE=LVCMOS33;

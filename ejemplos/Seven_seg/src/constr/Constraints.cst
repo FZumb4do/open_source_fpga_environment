@@ -1,0 +1,35 @@
+IO_LOC  "sw[0]" 25;
+IO_PORT "sw[0]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "sw[1]" 26;
+IO_PORT "sw[1]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "sw[2]" 27;
+IO_PORT "sw[2]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "sw[3]" 28;
+IO_PORT "sw[3]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "segments[6]" 79;
+IO_PORT "segments[6]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "segments[0]" 80;
+IO_PORT "segments[0]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "segments[1]" 81;
+IO_PORT "segments[1]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "segments[2]" 82;
+IO_PORT "segments[2]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "segments[3]" 83;
+IO_PORT "segments[3]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "segments[4]" 84;
+IO_PORT "segments[4]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "segments[5]" 85;
+IO_PORT "segments[5]" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP;
